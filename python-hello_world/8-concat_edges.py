@@ -4,6 +4,10 @@ str = "Python is an interpreted, interactive, object-oriented programming\
 str = str[39:67] + str[114:119] + str[:6]
 print(str)
 
+
+
+
+
        
 
 
