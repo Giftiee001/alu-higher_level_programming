@@ -1,10 +1,19 @@
 #!/usr/bin/python3
-"""checks if an object is an instance of a specified class"""
+"""function that appends a string at the end of a text file (UTF8)
+and returns the number of characters added"""
 
 
-def is_same_class(obj, a_class):
-    """return True if obj is instance of a_class"""
-    x = type(obj)
-    if x == a_class:
-        return True
-    return False
+def append_write(filename="", text=""):
+    """
+    Function that appends to a text file.
+
+    Args:
+        filename: filename
+        text: text to write
+
+    Raises:
+        Exception: when the file can be opened
+    """
+
+    with open(filename, "a", encoding="utf-8") as f:
+        return f.write(text)
