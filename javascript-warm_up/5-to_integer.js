@@ -1,8 +1,15 @@
 #!/usr/bin/node
-// Define an array of strings
-const lines = ['C is fun', 'Python is cool', 'JavaScript is amazing'];
+// Get the first argument
+const arg = process.argv[2];
 
-// Loop through the array and print each line
-for (let i = 0; i < lines.length; i++) {
-  console.log(lines[i]);
+// Convert the argument to an integer using parseInt
+const integer = parseInt(arg);
+
+// Check if the conversion was successful and not NaN
+if (!isNaN(integer)) {
+  // Print the result
+  console.log(`My number: ${integer}`);
+} else {
+  // Print "Not a number"
+  console.log('Not a number');
 }

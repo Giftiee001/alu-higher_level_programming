@@ -1,10 +1,8 @@
 #!/usr/bin/node
-const x = parseInt(process.argv[2]);
+// Define an array of strings
+const lines = ['C is fun', 'Python is cool', 'JavaScript is amazing'];
 
-if (isNaN(x)) {
-  console.log('Missing number of occurrences');
-} else {
-  for (let i = 0; i < x; i++) {
-    console.log('C is fun');
-  }
+// Loop through the array and print each line
+for (let i = 0; i < lines.length; i++) {
+  console.log(lines[i]);
 }
